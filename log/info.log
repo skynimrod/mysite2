@@ -1,0 +1,98 @@
+"GET /report/ HTTP/1.1" 200 2370
+"GET /static/polls/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/report/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /report/ HTTP/1.1" 200 2370
+"GET /static/polls/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/report/css/bootstrap.min.css HTTP/1.1" 304 0
+2016-11-06 21:02:13,013 [Thread-1:7436] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2370
+2016-11-06 21:02:13,053 [Thread-3:3400] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/report/css/bootstrap.min.css HTTP/1.1" 304 0
+2016-11-06 21:02:13,053 [Thread-4:8012] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/polls/js/bootstrap.min.js HTTP/1.1" 304 0
+2016-11-07 06:17:52,293 [Thread-1:5756] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2375
+2016-11-07 06:17:52,452 [Thread-3:5948] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-11-07 06:17:52,453 [Thread-3:5948] [django.server:131] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 3018
+2016-11-07 06:19:15,252 [Thread-3:5752] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/download HTTP/1.1" 301 0
+2016-11-07 06:19:16,360 [Thread-4:5668] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/download/ HTTP/1.1" 302 0
+2016-11-07 06:19:16,406 [Thread-5:5788] [django.server:131] [basehttp:log_message] [INFO]- "GET /polls/ HTTP/1.1" 200 3748
+2016-11-07 06:19:16,500 [Thread-6:5712] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/report/img/glyphicons-halflings.png HTTP/1.1" 200 12799
+2016-11-07 06:19:52,474 [Thread-3:5672] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/download/ HTTP/1.1" 302 0
+2016-11-07 06:19:52,505 [Thread-4:3436] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2375
+2016-11-07 06:20:24,672 [Thread-6:2220] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /report/update/
+Traceback (most recent call last):
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\F_3_test\3_Python\mysite2\report\views.py", line 82, in updateReportListView
+    print("start="+startdate)
+TypeError: Can't convert 'NoneType' object to str implicitly
+2016-11-07 06:20:24,922 [Thread-6:2220] [django.server:131] [basehttp:log_message] [ERROR]- "GET /report/update/ HTTP/1.1" 500 71584
+2016-11-07 06:21:22,564 [Thread-7:5956] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/update?start=2016-11-07&end=2016-11-07 HTTP/1.1" 301 0
+2016-11-07 06:21:22,985 [Thread-8:3448] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /report/update/
+Traceback (most recent call last):
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\F_3_test\3_Python\mysite2\report\views.py", line 97, in updateReportListView
+    parseReportList( filename )
+  File "F:\F_3_test\3_Python\mysite2\report\reportlist\parseReportList.py", line 105, in parseReportList
+    d2[reportTblName] = getattr( di, reportTblName )
+AttributeError: 'module' object has no attribute 'ReportList_2016_Tbl'
+2016-11-07 06:21:23,110 [Thread-8:3448] [django.server:131] [basehttp:log_message] [ERROR]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 500 100783
+2016-11-07 06:21:49,957 [Thread-1:6076] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 302 0
+2016-11-07 06:21:50,035 [Thread-3:4132] [django.server:131] [basehttp:log_message] [INFO]- "GET /polls/ HTTP/1.1" 200 3748
+2016-11-07 06:21:50,082 [Thread-4:1772] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/report/css/bootstrap.min.css HTTP/1.1" 304 0
+2016-11-07 06:21:50,082 [Thread-5:4244] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/polls/js/bootstrap.min.js HTTP/1.1" 304 0
+2016-11-07 06:21:50,113 [Thread-6:3548] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/report/img/glyphicons-halflings.png HTTP/1.1" 304 0
+2016-11-07 06:25:37,289 [Thread-3:4356] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 302 0
+2016-11-07 06:25:37,320 [Thread-4:5852] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2375
+2016-11-07 06:39:26,058 [Thread-1:1176] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 302 0
+2016-11-07 06:39:26,093 [Thread-3:6052] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2375
+2016-11-07 06:39:40,561 [Thread-5:5844] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 302 0
+2016-11-07 06:39:40,591 [Thread-6:4264] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2375
+2016-11-07 06:39:40,648 [Thread-7:3888] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/report/css/bootstrap.min.css HTTP/1.1" 304 0
+2016-11-07 06:39:40,650 [Thread-8:3704] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/polls/js/bootstrap.min.js HTTP/1.1" 304 0
+2016-11-07 06:51:05,263 [Thread-1:5900] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /report/update/
+Traceback (most recent call last):
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\F_3_test\3_Python\mysite2\report\views.py", line 97, in updateReportListView
+    parseReportList( filename )
+  File "F:\F_3_test\3_Python\mysite2\report\reportlist\parseReportList.py", line 101, in parseReportList
+    logger.log("+++++++++============================")
+TypeError: log() missing 1 required positional argument: 'msg'
+2016-11-07 06:51:05,650 [Thread-1:5900] [django.server:131] [basehttp:log_message] [ERROR]- "GET /report/update/?start=2016-11-04&end=2016-11-05 HTTP/1.1" 500 99995
+2016-11-07 06:51:30,726 [Thread-1:5056] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /report/update/
+Traceback (most recent call last):
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\my\Envs\env3\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\F_3_test\3_Python\mysite2\report\views.py", line 97, in updateReportListView
+    parseReportList( filename )
+  File "F:\F_3_test\3_Python\mysite2\report\reportlist\parseReportList.py", line 101, in parseReportList
+    logger.log('info',"+++++++++============================")
+  File "C:\DevProgram\Python34\Lib\logging\__init__.py", line 1337, in log
+    raise TypeError("level must be an integer")
+TypeError: level must be an integer
+2016-11-07 06:51:30,986 [Thread-1:5056] [django.server:131] [basehttp:log_message] [ERROR]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 500 104619
+2016-11-07 06:52:01,336 [Thread-1:5840] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 302 0
+2016-11-07 06:52:01,406 [Thread-3:5896] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2375
+2016-11-07 06:52:01,486 [Thread-4:3704] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/report/css/bootstrap.min.css HTTP/1.1" 304 0
+2016-11-07 06:52:01,486 [Thread-5:4960] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/polls/js/bootstrap.min.js HTTP/1.1" 304 0
+2016-11-07 06:52:31,117 [Thread-1:1796] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 302 0
+2016-11-07 06:52:31,147 [Thread-3:436] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2375
+2016-11-07 06:54:28,717 [Thread-1:5920] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 302 0
+2016-11-07 06:54:28,807 [Thread-3:5692] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2375
+2016-11-07 06:57:10,424 [Thread-2:3548] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/update/?start=2016-11-07&end=2016-11-07 HTTP/1.1" 302 0
+2016-11-07 06:57:10,474 [Thread-3:5616] [django.server:131] [basehttp:log_message] [INFO]- "GET /report/ HTTP/1.1" 200 2375

@@ -1,0 +1,99 @@
+﻿{% extends 'base.html' %}
+{!-- --}
+{% load static %}
+
+{% block content %}
+		    <script>
+				    $(document).ready(function(){
+				                
+				        alert("Hello JQuery from showall1.html");
+				    });   
+				</script>
+				<script language="javascript" type="text/javascript" src="{% static '/report/js/jquery-1.11.3.js' %}"></script>
+				<script>
+				 	  //alert("Heloworld");
+				 	  
+				    $(document).ready(function() {
+				    	  //var pagenum = {{ pagenum }};
+				    	  //alert(pagenum);
+				    	  
+				    	  $pagenum = 10;
+				    	  $start = 0;
+				    	  $end = $pagenum;
+				    	  
+				    	  length = {{ reportset|length }}
+				    	  var i = $pagenum
+				    	  {% for report in reportset|slice:":4" %}
+				    	  //alert("{{ report.reportname}}");
+				    	  {% endfor%}
+				                
+				        alert("Hello Jquery from showall2");
+				        $("#adams").click( function() {
+				            alert("Hello, adams click");
+				            $("#adams").text("Hello");
+				            //alert(length);
+				            var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+				            //alert(csrfToken);
+				    	      //$("#vtest").empty().load("{% url 'report:ajaxtest' %}", {pagenum:20,csrfmiddlewaretoken: csrfToken });
+				    	      //$("#vtest").empty().load("{% url 'report:ajaxtest' %}");
+				    	      
+				    	      $.post(
+				    	          "{% url 'report:ajaxtest' %}", 
+				    	          {pagenum:$pagenum, start:$start, end:$end, csrfmiddlewaretoken: csrfToken } ,
+				    	          function(data,status){
+                            //alert("Data: " + data + "\nStatus: " + status);
+                            $("#vtest").append(data);
+                            $start = $end;
+                            $end += $pagenum;
+                        }
+                    );
+				    	      alert("end of click");
+				        });
+				    });   // end of jquery
+				</script>
+
+
+<div class = "row">
+	  <div class="span2">
+	  	  
+    	  <div class="well sidebar-nav">
+    	  	  <ul class="nav nav-list">
+    	  	  	  <li class="nav-header">--{{user}}:{{ customuser.id }}----</li>
+								<li><a href="{% url 'report:download' %}">download</a></li>
+								<li><a href="{% url 'report:update' %}">update</a></li>
+								<li><a href="{% url 'report:showall' %}">show all report(filtered)</a></li>
+								<li><a href="{% url 'report:showselected' %}">show all report(filtered)</a></li>
+								<li><a href="{% url 'report:clear' %}">clear</a></li>
+    	  	  </ul>
+    	  </div>
+    	
+    </div>    
+	  <div class="span10">
+	  	  <a id = "adams" href="javascript:void(0);">测试 JQuery{{ reportset.0.reportname }}  </a><br />
+    	  <div class="well sidebar-nav">
+						
+    	  		{% if reportset.exists %}
+    	  				{% regroup reportset|slice:":4" by releaseddate as report_list%}
+    	  				<ul>
+    	  					  <li>pagenum = {{ pagenum }}, report.count= {{ reportset.count }} ({{ reportset | length }}) </li>
+		    	  				{% for item in report_list %}
+		    	  				<li>{{ item.grouper }} {{ item.list.0.reportname | slice:":4" }} forloop.counter0={{ forloop.counter0 }}</li>
+		    	  				<ul>
+		    	  					  {% for report in item.list %}
+		    	  					  <li><a href="{{ prefix }}{{ report.reporturl }}" target="_blank">
+		    	  					  	{{ report.stockcode}}({{report.reportname|slice:":4"}}) : {{ report.reportname }} - {{ report.releaseddate }}</a></li>
+		    	  						{% endfor %}
+		    	  				</ul>
+		    	  				{% endfor %}
+    	  				</ul>
+    	  		{% endif %}
+    	  </div>
+    	  <div class="well sidebar-nav" id="vtest">
+    	  	 
+    	  </div>
+    	
+    </div>    
+	
+</div>
+
+{% endblock %}

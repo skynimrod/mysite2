@@ -1,0 +1,9 @@
+[
+    {"model": "report.ReportList_2016_Tbl", 
+              "fields": {"stockcode":"600000",
+                         "reporturl": "http://www.cninfo.com.cn/disclosure/fulltext/plate/shmblatest_24h.js", 
+                         "reportname": "公告名称",
+                         "flag1": "1701",
+                         "releaseddate": "2016-10-25",
+                         "releasedtime":"10:28:30.123456"}}
+]

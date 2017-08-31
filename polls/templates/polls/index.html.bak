@@ -1,0 +1,50 @@
+﻿{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class = "row">
+
+    <div class="span2">
+    	  <div class="well sidebar-nav">
+    	  	  <ul class="nav nav-list">
+    	  	  	  <li class="nav-header">------</li>
+    	  	  </ul>
+    	  </div>
+    	
+    </div>    
+    <div class="span7">
+    	  <div class="hero-unit">
+    	  	  <h1>questions</h1>
+    	  	  <a href="{% url 'admin:polls_question_add' %}" class="btn btn-primary">Add</a>
+    	  </div>
+    </div>
+    
+    <div class="span3">
+    	  <div class="well sidebar-nav">
+    	  	  <ul  class="nav nav-list">
+    	  	  	  <li  class="nav-header">Recent Questions</li>
+    	  	  	  {% if latest_question_list %}
+    	  	  	      {% for question in latest_question_list %}
+    	  	  	          <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    	  	  	      {% endfor %}
+    	  	  	  {% else %}
+    	  	  	      <p>no available polls</p>
+    	  	  	  {% endif %}
+    	  	  </ul>
+    	  </div>
+    	
+    </div>
+    <div class="span3">
+    	
+    </div>
+    
+    <div class="span9">
+    	
+    </div>
+
+<div/>
+	
+
+{% endblock %}

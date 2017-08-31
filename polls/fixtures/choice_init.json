@@ -1,0 +1,23 @@
+[
+    {"model": "polls.choice", "fields": {"question": 1, "choice_text": "12", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 1, "choice_text": "13", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 1, "choice_text": "14", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 1, "choice_text": "15", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 2, "choice_text": "21", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 2, "choice_text": "22", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 2, "choice_text": "31", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 2, "choice_text": "32", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 2, "choice_text": "41", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 3, "choice_text": "61", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 4, "choice_text": "51", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 4, "choice_text": "52", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 4, "choice_text": "71", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 4, "choice_text": "72", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 5, "choice_text": "81", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 5, "choice_text": "82", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 5, "choice_text": "83", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 6, "choice_text": "91", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 6, "choice_text": "92", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 6, "choice_text": "93", "votes": 0}},
+    {"model": "polls.choice", "fields": {"question": 6, "choice_text": "94", "votes": 0}}
+]

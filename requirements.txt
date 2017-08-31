@@ -1,0 +1,12 @@
+cycler==0.10.0
+Django==1.10.1
+django-bootstrap-toolkit==2.15.0
+matplotlib==1.5.3
+mpmath==0.19
+numpy==1.11.1
+PyMySQL==0.7.9
+pyparsing==2.1.9
+python-dateutil==2.5.3
+pytz==2016.6.1
+six==1.10.0
+sympy==1.0

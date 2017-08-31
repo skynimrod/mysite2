@@ -1,0 +1,11 @@
+[
+    {"model": "polls.question", "fields": {"question_text": "1. What's your name?", "pub_date": "2016-10-06T10:33:26Z"}},
+    {"model": "polls.question", "fields": {"question_text": "2. What's your name?", "pub_date": "2016-10-06T10:33:26Z"}},
+    {"model": "polls.question", "fields": {"question_text": "3. What's your name?", "pub_date": "2016-10-06T10:33:26Z"}},
+    {"model": "polls.question", "fields": {"question_text": "4. What's your name?", "pub_date": "2016-10-06T10:33:26Z"}},
+    {"model": "polls.question", "fields": {"question_text": "5. What's your name?", "pub_date": "2016-10-06T10:33:26Z"}},
+    {"model": "polls.question", "fields": {"question_text": "6. What's your name?", "pub_date": "2016-10-06T10:33:26Z"}},
+    {"model": "polls.question", "fields": {"question_text": "7. What's your name?", "pub_date": "2016-10-06T10:33:26Z"}},
+    {"model": "polls.question", "fields": {"question_text": "8. What's your name?", "pub_date": "2016-10-06T10:33:26Z"}},
+    {"model": "polls.question", "fields": {"question_text": "9. What's your name?", "pub_date": "2016-10-06T10:33:26Z"}}
+]

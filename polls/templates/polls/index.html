@@ -1,0 +1,56 @@
+﻿{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class = "row">
+
+    <div class="span2">
+    	  <div class="well sidebar-nav">
+    	  	  <ul class="nav nav-list">
+    	  	  	  <li class="nav-header">------</li>
+    	  	  </ul>
+    	  </div>
+    	
+    </div>    
+    <div class="span7">
+    	  <div class="hero-unit">
+    	  	  <h1>questions</h1>
+    	  	  <a href="{% url 'admin:polls_question_add' %}" class="btn btn-primary">Add</a>
+    	  	  <div class="input-append date" id="datetimepicker" data-date="2016-11-05" data-date-format="yyyy-mm-dd">
+    	  	  	  <input class="span2" size"16" type="text" value="2016-11-05">
+    	  	  	  <span class="add-on"><i class="icon-remove"></i></></span>
+    	  	  	  <span class="add-on"><i class="icon-th"></i></span>
+    	  	  	
+    	  	  </div>
+    	  </div>
+    </div>
+    
+    <div class="span3">
+    	  <div class="well sidebar-nav">
+    	  	  <ul  class="nav nav-list">
+    	  	  	  <li  class="nav-header">Recent Questions</li>
+    	  	  	  {% if latest_question_list %}
+    	  	  	      {% for question in latest_question_list %}
+    	  	  	          <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    	  	  	      {% endfor %}
+    	  	  	  {% else %}
+    	  	  	      <p>no available polls</p>
+    	  	  	  {% endif %}
+    	  	  </ul>
+    	  </div>
+    	
+    </div>
+    <div class="span3">
+    	
+    </div>
+    
+    <div class="span9">
+    	
+    </div>
+
+<div/>
+	
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{!-- --}
+{% load static %}
+
+{% block content %}
+
+<div class = "row">
+	  <div class="span2">
+    	  <div class="well sidebar-nav">
+    	  	  <ul class="nav nav-list">
+    	  	  	  <li class="nav-header">--{{user}}:{{ customuser.id }}----</li>
+								<li><a href="{% url 'report:download' %}">download</a></li>
+								<li><a href="{% url 'report:update' %}">update</a></li>
+								<li><a href="{% url 'report:showall' %}">show all report(filtered)</a></li>
+								<li><a href="{% url 'report:showselected' %}">show all report(filtered)</a></li>
+								<li><a href="{% url 'report:clear' %}">clear</a></li>
+								<li><a href="{% url 'report:ajaxtest' %}">ajaxtest</a></li>
+    	  	  </ul>
+    	  </div>
+    	
+    </div>    
+	
+</div>
+
+{% endblock %}

@@ -1,0 +1,100 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 17, 2016 - 09:04:42
+Django version 1.10.1, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+2016-11-17
+2016-11-17
+ 公告数量733
+F:\F_3_test\3_Python\mysite2\report\reportlist/models.py
+############
+class ReportList_2016_Tbl(models.Model):
+    stockcode   = models.CharField('股票代码',  max_length = 6, blank = False )
+    reporturl   = models.CharField('公告地址',  max_length = 255, blank = False, unique = True )
+    reportname  = models.CharField('公告名称',  max_length = 255, blank = False )
+    PDF     = 'pdf'
+    TXT     = 'txt'
+    HTML    = 'html'
+    REPORT_TYPE_CHOICES = ( (PDF, 'pdf file'), (TXT, 'txt file'), (HTML, 'html file'), )
+    reporttype  = models.CharField('公告类型',  max_length = 4, blank = False,
+                                   choices = REPORT_TYPE_CHOICES, default= PDF, )
+    flag1       = models.CharField('待用' ,    max_length = 6, blank = False )
+    releaseddate = models.CharField('发布日期', max_length = 10, blank = False )
+    releasedtime = models.CharField('发布时间', max_length = 18, blank = False )
+
+['report_ReportList_2016_Tbl']
+report_ReportList_2016_Tbl
+buildStockBaseInfoTbl() beginreport_ReportList_2016_Tbl
+查询结果总数为: 0 
+ 公告数量423
+F:\F_3_test\3_Python\mysite2\report\reportlist/models.py
+############
+class ReportList_2016_Tbl(models.Model):
+    stockcode   = models.CharField('股票代码',  max_length = 6, blank = False )
+    reporturl   = models.CharField('公告地址',  max_length = 255, blank = False, unique = True )
+    reportname  = models.CharField('公告名称',  max_length = 255, blank = False )
+    PDF     = 'pdf'
+    TXT     = 'txt'
+    HTML    = 'html'
+    REPORT_TYPE_CHOICES = ( (PDF, 'pdf file'), (TXT, 'txt file'), (HTML, 'html file'), )
+    reporttype  = models.CharField('公告类型',  max_length = 4, blank = False,
+                                   choices = REPORT_TYPE_CHOICES, default= PDF, )
+    flag1       = models.CharField('待用' ,    max_length = 6, blank = False )
+    releaseddate = models.CharField('发布日期', max_length = 10, blank = False )
+    releasedtime = models.CharField('发布时间', max_length = 18, blank = False )
+
+['report_ReportList_2016_Tbl']
+report_ReportList_2016_Tbl
+buildStockBaseInfoTbl() beginreport_ReportList_2016_Tbl
+查询结果总数为: 0 
+ 公告数量605
+F:\F_3_test\3_Python\mysite2\report\reportlist/models.py
+############
+class ReportList_2016_Tbl(models.Model):
+    stockcode   = models.CharField('股票代码',  max_length = 6, blank = False )
+    reporturl   = models.CharField('公告地址',  max_length = 255, blank = False, unique = True )
+    reportname  = models.CharField('公告名称',  max_length = 255, blank = False )
+    PDF     = 'pdf'
+    TXT     = 'txt'
+    HTML    = 'html'
+    REPORT_TYPE_CHOICES = ( (PDF, 'pdf file'), (TXT, 'txt file'), (HTML, 'html file'), )
+    reporttype  = models.CharField('公告类型',  max_length = 4, blank = False,
+                                   choices = REPORT_TYPE_CHOICES, default= PDF, )
+    flag1       = models.CharField('待用' ,    max_length = 6, blank = False )
+    releaseddate = models.CharField('发布日期', max_length = 10, blank = False )
+    releasedtime = models.CharField('发布时间', max_length = 18, blank = False )
+
+['report_ReportList_2016_Tbl']
+report_ReportList_2016_Tbl
+buildStockBaseInfoTbl() beginreport_ReportList_2016_Tbl
+查询结果总数为: 0 
+ 公告数量278
+F:\F_3_test\3_Python\mysite2\report\reportlist/models.py
+############
+class ReportList_2016_Tbl(models.Model):
+    stockcode   = models.CharField('股票代码',  max_length = 6, blank = False )
+    reporturl   = models.CharField('公告地址',  max_length = 255, blank = False, unique = True )
+    reportname  = models.CharField('公告名称',  max_length = 255, blank = False )
+    PDF     = 'pdf'
+    TXT     = 'txt'
+    HTML    = 'html'
+    REPORT_TYPE_CHOICES = ( (PDF, 'pdf file'), (TXT, 'txt file'), (HTML, 'html file'), )
+    reporttype  = models.CharField('公告类型',  max_length = 4, blank = False,
+                                   choices = REPORT_TYPE_CHOICES, default= PDF, )
+    flag1       = models.CharField('待用' ,    max_length = 6, blank = False )
+    releaseddate = models.CharField('发布日期', max_length = 10, blank = False )
+    releasedtime = models.CharField('发布时间', max_length = 18, blank = False )
+
+['report_ReportList_2016_Tbl']
+report_ReportList_2016_Tbl
+buildStockBaseInfoTbl() beginreport_ReportList_2016_Tbl
+查询结果总数为: 0 
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 17, 2016 - 09:42:31
+Django version 1.10.1, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.

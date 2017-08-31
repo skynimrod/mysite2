@@ -1,0 +1,14 @@
+[
+    {"model": "report.ReportDownLoadsInfoTbl", "fields": {"url": "http://www.cninfo.com.cn/disclosure/fulltext/plate/shmblatest_24h.js", "filename": "shmb","memo":"沪市主板公告"}},
+    {"model": "report.ReportDownLoadsInfoTbl", "fields": {"url": "http://www.cninfo.com.cn/disclosure/fulltext/plate/szselatest_24h.js", "filename": "szse","memo":"深市主板公告"}},
+    {"model": "report.ReportDownLoadsInfoTbl", "fields": {"url": "http://www.cninfo.com.cn/disclosure/fulltext/plate/smelatest_24h.js", "filename": "sme","memo":"深市中小板公告"}},
+    {"model": "report.ReportDownLoadsInfoTbl", "fields": {"url": "http://www.cninfo.com.cn/disclosure/fulltext/plate/cyblatest_24h.js", "filename": "cyb","memo":"深市创业板公告"}},
+    
+    {"model": "report.ReportDownLoadsInfoTbl", "fields": {"url": "http://www.cninfo.com.cn/disclosure/fulltext/plate/fundlatest_24h.js", "filename": "fund","memo":"基金公告"}},
+    
+    {"model": "report.ReportDownLoadsInfoTbl", "fields": {"url": "http://www.cninfo.com.cn/disclosure/fulltext/plate/cnszbondlatest_1m.js", "filename": "cnszbond","memo":"深市债券公告"}},
+    {"model": "report.ReportDownLoadsInfoTbl", "fields": {"url": "http://www.cninfo.com.cn/disclosure/fulltext/plate/shbondlatest_1m.js", "filename": "shbond","memo":"沪市债券公告"}},
+    
+    {"model": "report.ReportDownLoadsInfoTbl", "fields": {"url": "http://www.cninfo.com.cn/disclosure/fulltext/plate/hkmblatest_24h.js", "filename": "hkmb","memo":"香港主板公告"}},
+    {"model": "report.ReportDownLoadsInfoTbl", "fields": {"url": "http://www.cninfo.com.cn/disclosure/fulltext/plate/hkgemlatest_24h.js", "filename": "hkgem","memo":"香港创业板公告"}}
+]

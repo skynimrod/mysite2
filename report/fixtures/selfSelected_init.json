@@ -1,0 +1,23 @@
+[ 
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"300182"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"300017"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"300506"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"300498"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"300207"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"002430"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"002190"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"000002"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"000166"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"002034"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"000939"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"600391"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"600936"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"603999"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"601766"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"601989"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"601390"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"600660"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"600559"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"600519"}},
+    {"model":"report.selfselectedtbl","fields":{"username":"adams","stockcode":"601009"}}
+]
